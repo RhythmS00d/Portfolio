@@ -1,9 +1,14 @@
 import Image from 'next/image'
+import {Footer} from '../components/footer'
+import React from 'react';
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
-      
+      <section></section>
+      <Footer />
     </main>
-  )
+  );
 }
+
+export default Home;
