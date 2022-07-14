@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import iconInstagram from "../public/icons8-instagram.gif"
 import iconGithub from "../public/github.svg"
 
@@ -7,9 +8,13 @@ const Footer = () => {
   return (
     <footer>
       <article className="info">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact me</a>
+        <div>
+          <Link href="/">Home</Link>
+          <Link href="/contact">Contact me</Link>
+        </div>
+        <span>
+          Yesterday is not ours to recover, but tomorrow is ours to win.
+        </span>
       </article>
       <article className="socials">
         <Image src={iconInstagram} alt="Instagram" />
