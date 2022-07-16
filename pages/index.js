@@ -1,17 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Footer } from "../components/footer";
-import React, { useEffect } from "react";
-
-import profilepic from "../public/profilepic.jpeg";
-import java from "../public/java.png";
-import jscss from "../public/jscss.png";
-import react from "../public/react.png";
-import python from "../public/python.png";
-import mqlogo from "../public/mqlogo.webp";
-import dominos from "../public/dominos.png";
-import emergent from "../public/emergent.png";
-import eleven from "../public/eleven.png";
+import React from "react";
 
 const Home = () => {
   return (
@@ -27,7 +17,7 @@ const Home = () => {
             width={200}
             height={200}
             id="profilepic"
-            src={profilepic}
+            src={"/profilepic.jpeg"}
           />
         </div>
         <div className="welcome">
@@ -54,10 +44,10 @@ const Home = () => {
           over the 4 years.
         </h2>
         <div>
-          <Image className="langLogo" src={python} width={100} height={100} />
-          <Image className="langLogo" src={jscss} width={250} height={120} />
-          <Image className="langLogo" src={react} width={100} height={100} />
-          <Image className="langLogo" src={java} width={100} height={100} />
+          <Image className="langLogo" src={"/python.png"} width={100} height={100} />
+          <Image className="langLogo" src={"/jscss.png"} width={250} height={120} />
+          <Image className="langLogo" src={"/react.png"} width={100} height={100} />
+          <Image className="langLogo" src={"/java.png"} width={100} height={100} />
         </div>
       </section>
       <section className="aboutMe">
@@ -78,7 +68,13 @@ const Home = () => {
       </section>
       <section className="uni">
         <div className="uniImage">
-          <Image width={250} height={140} src={mqlogo} />
+          <Image width={250} height={140} src={"/mq.jpg"} />
+          <Image width={250} height={140} src={"/mqlogo.webp"} />
+          <Image width={250} height={140} src={"/qsmq.png"} />
+        </div>
+        <div className="degree">
+          <h3>Bachelor of Information Technology</h3>
+          <h6>Software Development</h6>
         </div>
       </section>
       <section className="work">
@@ -93,7 +89,7 @@ const Home = () => {
           <ul>
             <li className="it">
               <div>
-                <Image width={300} height={100} src={emergent} />
+                <Image width={300} height={100} src={"/emergent.png"} />
               </div>
               <aside>
                 <h2>IT Support Helpdesk</h2>
@@ -108,7 +104,7 @@ const Home = () => {
             </li>
             <li className="dominos">
               <div>
-                <Image width={100} height={100} src={dominos} />
+                <Image width={100} height={100} src={"/dominos.png"} />
               </div>
               <aside>
                 <h2>Manager</h2>
@@ -125,7 +121,7 @@ const Home = () => {
             </li>
             <li className="7eleven">
               <div>
-                <Image width={100} height={100} src={eleven} />
+                <Image width={100} height={100} src={"/eleven.png"} />
               </div>
               <aside>
                 <h2>Console Operator</h2>

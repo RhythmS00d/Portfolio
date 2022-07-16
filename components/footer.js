@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import iconInstagram from "../public/icons8-instagram.gif"
-import iconGithub from "../public/github.svg"
 
 const Footer = () => {
   return (
@@ -17,8 +15,13 @@ const Footer = () => {
         </span>
       </article>
       <article className="socials">
-        <Image src={iconInstagram} alt="Instagram" />
-        <Image src={iconGithub} alt="Github" />
+        <Image
+          src={"/icons8-instagram.gif"}
+          width={60}
+          height={60}
+          alt="Instagram"
+        />
+        <Image src={"/github.svg"} width={60} height={60} alt="Github" />
       </article>
       <span>All rights reserved &#169;</span>
     </footer>
