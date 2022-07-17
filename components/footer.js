@@ -11,19 +11,25 @@ const Footer = () => {
           <Link href="/contact">Contact me</Link>
         </div>
         <span>
-          Yesterday is not ours to recover, but tomorrow is ours to win.
+          YESTERDAY IS NOT OURS TO RECOVER, BUT TOMORROW IS OURS TO WIN.
         </span>
       </article>
       <article className="socials">
-        <Image
-          src={"/icons8-instagram.gif"}
-          width={60}
-          height={60}
-          alt="Instagram"
-        />
-        <Image src={"/github.svg"} width={60} height={60} alt="Github" />
+        <div>
+          <a href="https://www.instagram.com/rhythm_sood/">
+            <Image
+              src={"/icons8-instagram.gif"}
+              width={60}
+              height={60}
+              alt="Instagram"
+            />
+          </a>
+          <a href="https://github.com/RhythmS00d">
+            <Image src={"/github.svg"} width={50} height={60} alt="Github" />
+          </a>
+        </div>
+        <span>All rights reserved &#169;</span>
       </article>
-      <span>All rights reserved &#169;</span>
     </footer>
   );
 }
